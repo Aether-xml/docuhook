@@ -26,3 +26,16 @@ Herhangi bir Git projenizin klasörüne gidin ve şu komutla kancayı aktif edin
 ```bash
 docuhook --install
 ```
+
+## Claude Code & OpenCode CLI Entegrasyonu (Skill)
+
+Bu proje, Claude Code ve OpenCode CLI gibi otonom yapay zeka araçlarıyla doğrudan uyumlu yerleşik bir **Agent Skill** (`SKILL.md`) içerir.
+
+Yapay zeka ajanı üzerinden doğrudan `/docuhook` komutunu kullanabilmek için aşağıdaki komutlarla kurulumu tamamlayabilirsiniz:
+
+```bash
+mkdir -p ~/.claude/skills/docuhook
+cp .claude/skills/docuhook/SKILL.md ~/.claude/skills/docuhook/SKILL.md
+```
+
+Artık Claude veya OpenCode arayüzünde sadece `/docuhook` yazarak akıllı güncellemeyi başlatabilirsiniz.
